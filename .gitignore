@@ -1,3 +1,55 @@
+#################
+## Eclipse
+#################
+
+.classpath
+.settings
+.project
+
+src/main/webapp/images
+src/main/webapp/history
+src/main/webapp/br
+src/main/webapp/WEB-INF/classes
+src/main/webapp/css
+src/main/webapp/*.js
+src/main/webapp/*.png
+src/main/webapp/*.map
+src/main/webapp/assets/**/*
+src/main/webapp/*.ico
+src/main/webapp/*.jpg
+src/main/webapp/*.txt
+src/main/webapp/fontawesome*
+src/main/webapp/glyphicons*
+target
+############
+## Windows
+############
+
+# Windows image file caches
+Thumbs.db
+
+# Folder config file
+Desktop.ini
+
+############
+## SVN
+############
+.svn/
+
+############
+## Java ##
+############
+*.ear
+*.log
+*.class
+logaudisys/
+logjbf/
+build/
+*.html
+*.swf
+*.swz
+*.bmp
+
 # Compiled class file
 *.class
 
