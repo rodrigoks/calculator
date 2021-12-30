@@ -5,14 +5,16 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
+import br.com.jbusiness.calculator.exceptions.UnsuportedMathException;
+
 @RestController
 public class CalculatorController {
 
 	
 	@RequestMapping(value = "/sum/{numberOne}/{numberTwo}", method = RequestMethod.GET)
-	public Double sum(@PathVariable("numberOne") String numberOne, @PathVariable("numberTwo") String numberTwo) throws Exception {
+	public Double sum(@PathVariable("numberOne") String numberOne, @PathVariable("numberTwo") String numberTwo) throws UnsuportedMathException {
 		if(!isNumeric(numberOne) || !isNumeric(numberTwo))
-			throw new Exception();
+			throw new UnsuportedMathException("Please set a numeric value");
 		return returnToDouble(numberOne) + returnToDouble(numberTwo);
 	}
 	
