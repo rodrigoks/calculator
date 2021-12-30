@@ -1,4 +1,4 @@
-package br.com.jbusiness.calculator;
+package br.com.jbusiness.calculator.controllers;
 
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
